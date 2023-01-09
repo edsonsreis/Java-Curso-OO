@@ -1,0 +1,84 @@
+--Configurando o GIT
+
+Aula 122 - Instalação do GIT no windows
+Após realizar o download do GIT BASH, realizar os seguintes passos:
+
+
+Aula 123 - Configurando sua identificação
+1- git config --global user.name "Edson Reis"
+2- git config --global user.email "edsomreis"
+3- git config --list
+
+Aula 124 - Mostrando arquivos ocultos e extensões
+1- Abrir opções do explorador de arquivos;
+2- Na aba modo de exibição, desmarcar "Ocultar as extensões dos tipos de arquivo desconhecidos;
+3- Marcar "Mostrar arquivos, pastas e unidades ocultas";
+
+Aula 125 - Configurar chave SSH
+1- Acessar o site onde tem o passo a passo: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+2- Após inserir o código no gitbash;
+3- Ir em settings - SSH and GPG Keys;
+
+Aula 126 - Primeira versão no Git Hub
+1- ls
+2- git init
+3- git add .
+4- git status 
+5- git commit -m "Criadas"
+6- git git branch -M main
+7- remote add origin git@github.com:edsonreis;aulagithubgit
+8- git push -u origin main
+9- yes
+
+Aula 127 - Salvando um novo commit
+Depois basta os seguintes comandos:
+1- git add .
+2- git status
+3- git commit -m "Criadas-v2"
+4- git push 
+
+Aula 128 - Demo - clonar e modificar um projeto
+1- Buscar o SSH e copiar o link
+2- Abrir um gitbash here na maquina
+3- git clone e cola o link do SSH
+4- cd aulagithub (entrar na pasta)
+
+
+Aula 129 - Git Log para verificar histórico de versões
+1- git log --oneline
+
+Aula 130 - Entendendo git status e stage
+Aula 131 - Git diff e recurso source control do VS
+Aula 132 - Git checkout
+Aula 133 - Arquivo .gitignore
+Aula 134 - Visão geral da segunda parte
+Aula 135 - Removendo arquivos da área de stage
+
+Aula 136 - Desfazendo modificações não salvas
+1- git status
+2- git reset
+3- git clean -df
+4- git checkout -- .
+
+Aula 137 - O que fazer quando abre o editor VIM
+Se aparecer o editor VIM, basta digitar i para habilitar a edição. Se quiser salvar: <ESC>, :wq , <ENTER> ou caso queira descartar as alterações: <ESC>, :q! , <ENTER>
+
+Aula 138 - Deletando último commit sem deletar modificações nos arquivos
+git  reset --soft HEAD~1
+
+Aula 139 - Deletando commits e também modificações nos arquivos
+Para deletar o último commit
+git reset --hard HEAD~1
+
+
+Aula 140 - Como atualizar o repositório local em relação ao remoto
+Retorna com o que está no git:
+git pull origin main
+
+Aula 141 - Como resolver push rejeitado por históricos diferentes
+Aula 142 - Resolvendo pull com conflito
+Aula 143 - Como sobrescrever um histórico no Github
+
+Aula 144 - Como apontar o projeto para outro repositório remoto
+1- git remote set-url origin git@github.com:edsonreis
+
